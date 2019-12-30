@@ -1,0 +1,18 @@
+
+    ident: an identifier. Examples: x; foo.
+    path: a qualified name. Example: T::SpecialA.
+    expr: an expression. Examples: 2 + 2; if true { 1 } else { 2 }; f(42).
+    ty: a type. Examples: i32; Vec<(char, String)>; &T.
+    pat: a pattern. Examples: Some(t); (17, 'a'); _.
+    stmt: a single statement. Example: let x = 3.
+    block: a brace-delimited sequence of statements. Example: { log(error, "hi"); return 12; }.
+    item: an item. Examples: fn foo() { }; struct Bar;.
+    meta: a "meta item", as found in attributes. Example: cfg(target_os = "windows").
+    tt: a single token tree.
+
+There are additional rules regarding the next token after a metavariable:
+
+    expr and stmt variables may only be followed by one of: => , ;
+    ty and path variables may only be followed by one of: => , = | ; : > [ { as where
+    pat variables may only be followed by one of: => , = | if in
+    Other variables may be followed by any token.

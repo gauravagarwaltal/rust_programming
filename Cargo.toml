@@ -1,0 +1,27 @@
+[package]
+name = "rust_programming"
+version = "0.1.0"
+authors = ["gaurava <gauc073@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+secp256k1 = '0.17.1'
+rand = '0.6.0'
+ed25519-dalek = '0.9.1'
+openssl = '0.10.26'
+signatory = '0.17.1'
+signatory-dalek = '0.17.0'
+phrases = { path = 'phrases'}
+greetings = { path = 'src/greetings'}
+hello_macro = { path = 'hello_macro'}
+hello_macro_derive = { path = 'hello_macro_derive'}
+queues = "1.1.0"
+syn = "0.14.4"
+quote = "0.6.3"
+poa = { path = 'poa'}
+libp2p = "^0.13.1"
+hex = "^0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_cbor = "^0.10"

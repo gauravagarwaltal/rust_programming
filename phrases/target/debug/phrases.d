@@ -1,0 +1,1 @@
+/home/gaurava/work/learning/rust/rust_programming/phrases/target/debug/phrases: /home/gaurava/work/learning/rust/rust_programming/phrases/src/greetings.rs /home/gaurava/work/learning/rust/rust_programming/phrases/src/lib.rs /home/gaurava/work/learning/rust/rust_programming/phrases/src/main.rs
